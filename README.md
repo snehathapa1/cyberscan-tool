@@ -29,6 +29,8 @@ python app.py
 3. Open browser:
 http://127.0.0.1:5000
 
+## Future Improvements
+- Add more vulnerability scanning features
 
 ## Project Structure
 web-pentest-tool/
@@ -44,7 +46,7 @@ web-pentest-tool/
 ├── static/
 │   └── style.css
 
-
+---
 
 ## Note
 This project is for educational purposes only.
