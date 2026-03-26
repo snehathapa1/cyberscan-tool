@@ -80,6 +80,7 @@ button {
     margin-left: 10px;
 }
 
+/* Improved button hover for better user experience */
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #fff;
