@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberScan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+    <h1 class="title">🔐 CyberScan </h1>
+    <p class="subtitle">Penetration Testing Dashboard</p>
+
+    <div class="card">
+        <form action="/scan" method="post">
+            <input type="text" name="url" placeholder="🌐 Enter URL to scan..." required>
+            <button type="submit">🚀 Scan Now</button>
+        </form>
+    </div>
+
+    {% if scanned_url %}
+    <div class="target">
+        🎯 Target: {{ scanned_url }}
+    </div>
+    {% endif %}
+
+    {% if result %}
+    <div class="result-card">
+        <h2>📊 Scan Result</h2>
+        <pre>{{ result }}</pre>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
